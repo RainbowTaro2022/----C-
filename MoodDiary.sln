@@ -1,11 +1,9 @@
-﻿﻿
+﻿﻿﻿﻿﻿﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoodDiaryApp", "MoodDiaryApp\MoodDiaryApp.csproj", "{BDA07AE6-0856-4BE5-A702-52330A2C4F81}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0AB3BF05-4346-4AA6-1389-037BE0695223}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoodDiaryApp", "src\MoodDiaryApp\MoodDiaryApp.csproj", "{BDA07AE6-0856-4BE5-A702-52330A2C4F81}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoodDiary.Tests", "tests\MoodDiary.Tests\MoodDiary.Tests.csproj", "{0E28E972-C489-4606-966B-23C6E5189807}"
 EndProject
@@ -48,6 +46,5 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{0E28E972-C489-4606-966B-23C6E5189807} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
 	EndGlobalSection
 EndGlobal
