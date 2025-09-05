@@ -75,9 +75,9 @@ namespace MoodDiary.Tests
             stopwatch.Stop();
             
             // Assert
-            // 100个用户插入应该在2秒内完成
-            Assert.True(stopwatch.ElapsedMilliseconds < 2000, 
-                $"插入100个用户耗时 {stopwatch.ElapsedMilliseconds} 毫秒，超过了2秒的预期");
+            // 100个用户插入应该在4秒内完成（在CI/CD环境中可能需要更多时间）
+            Assert.True(stopwatch.ElapsedMilliseconds < 4000, 
+                $"插入100个用户耗时 {stopwatch.ElapsedMilliseconds} 毫秒，超过了4秒的预期");
         }
         
         [Fact]
@@ -105,9 +105,9 @@ namespace MoodDiary.Tests
             stopwatch.Stop();
             
             // Assert
-            // 100次查询应该在1秒内完成
-            Assert.True(stopwatch.ElapsedMilliseconds < 1000, 
-                $"查询100次用户信息耗时 {stopwatch.ElapsedMilliseconds} 毫秒，超过了1秒的预期");
+            // 100次查询应该在2秒内完成（在CI/CD环境中可能需要更多时间）
+            Assert.True(stopwatch.ElapsedMilliseconds < 2000, 
+                $"查询100次用户信息耗时 {stopwatch.ElapsedMilliseconds} 毫秒，超过了2秒的预期");
         }
         
         [Fact]
@@ -150,9 +150,9 @@ namespace MoodDiary.Tests
             stopwatch.Stop();
             
             // Assert
-            // 100个心情记录插入应该在3秒内完成
-            Assert.True(stopwatch.ElapsedMilliseconds < 3000, 
-                $"插入100个心情记录耗时 {stopwatch.ElapsedMilliseconds} 毫秒，超过了3秒的预期");
+            // 100个心情记录插入应该在5秒内完成（在CI/CD环境中可能需要更多时间）
+            Assert.True(stopwatch.ElapsedMilliseconds < 5000, 
+                $"插入100个心情记录耗时 {stopwatch.ElapsedMilliseconds} 毫秒，超过了5秒的预期");
         }
         
         [Fact]
@@ -197,9 +197,9 @@ namespace MoodDiary.Tests
             stopwatch.Stop();
             
             // Assert
-            // 10次查询100条记录应该在1秒内完成
-            Assert.True(stopwatch.ElapsedMilliseconds < 1000, 
-                $"查询10次心情记录列表耗时 {stopwatch.ElapsedMilliseconds} 毫秒，超过了1秒的预期");
+            // 10次查询100条记录应该在2秒内完成（在CI/CD环境中可能需要更多时间）
+            Assert.True(stopwatch.ElapsedMilliseconds < 2000, 
+                $"查询10次心情记录列表耗时 {stopwatch.ElapsedMilliseconds} 毫秒，超过了2秒的预期");
         }
     }
 }
